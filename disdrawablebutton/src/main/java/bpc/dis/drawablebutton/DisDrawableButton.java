@@ -8,6 +8,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -18,6 +19,9 @@ public class DisDrawableButton extends FrameLayout {
     private AppCompatImageView imgDrawableLeft;
     private AppCompatImageView imgDrawableRight;
     private AppCompatTextView txtDrawableButton;
+
+    private int backgroundColor;
+    private int disableColor;
 
     public DisDrawableButton(Context context) {
         super(context);
@@ -54,8 +58,44 @@ public class DisDrawableButton extends FrameLayout {
     private void setupLayout(Context context, TypedArray styledAttributes) {
         //background
 
-        int background = styledAttributes.getColor(R.styleable.DisDrawableButton_disBackground, context.getResources().getColor(R.color.disBackground));
-        setDisBackground(background);
+        int backgroundColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disBackground, context.getResources().getColor(R.color.disBackground));
+        this.backgroundColor = backgroundColor;
+        setBackground(backgroundColor);
+
+
+        //background
+
+        int disableColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disDisableBackgroundColor, backgroundColor);
+        setDisableColor(disableColor);
+
+        //enable
+
+        boolean enable = styledAttributes.getBoolean(R.styleable.DisDrawableButton_disEnable, true);
+        setEnable(enable);
+    }
+
+    private void setupDrawable(TypedArray styledAttributes) {
+        //leftDrawable
+
+        int leftDrawable = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDrawableLeft, -1);
+        setLeftDrawable(leftDrawable);
+
+
+        //leftTintColor
+
+        int leftTintColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disLeftTintColor, -1);
+        setLeftTintColor(leftTintColor);
+
+        //rightDrawable
+
+        int rightDrawable = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDrawableRight, -1);
+        setRightDrawable(rightDrawable);
+
+
+        //rightTintColor
+
+        int rightTintColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disRightTintColor, -1);
+        setRightTintColor(rightTintColor);
     }
 
     private void setupText(Context context, TypedArray styledAttributes) {
@@ -96,33 +136,22 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
-    private void setupDrawable(TypedArray styledAttributes) {
-        //leftDrawable
 
-        int leftDrawable = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDrawableLeft, -1);
-        setLeftDrawable(leftDrawable);
-
-
-        //leftTintColor
-
-        int leftTintColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disLeftTintColor, -1);
-        setLeftTintColor(leftTintColor);
-
-        //rightDrawable
-
-        int rightDrawable = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDrawableRight, -1);
-        setRightDrawable(rightDrawable);
-
-
-        //rightTintColor
-
-        int rightTintColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disRightTintColor, -1);
-        setRightTintColor(rightTintColor);
+    public void setBackground(int color) {
+        clDrawableButton.setBackgroundColor(color);
     }
 
+    public void setEnable(boolean enable) {
+        clDrawableButton.setEnabled(enable);
+        if (enable) {
+            setBackground(backgroundColor);
+        } else {
+            setBackground(disableColor);
+        }
+    }
 
-    public void setDisBackground(int color) {
-        clDrawableButton.setBackgroundColor(color);
+    private void setDisableColor(int disableColor) {
+        this.disableColor = disableColor;
     }
 
 
@@ -179,6 +208,17 @@ public class DisDrawableButton extends FrameLayout {
         if (leftTintColor != -1) {
             imgDrawableLeft.setColorFilter(leftTintColor);
         }
+    }
+
+
+    @Override
+    public void setOnClickListener(@Nullable OnClickListener onClickListener) {
+        clDrawableButton.setOnClickListener(onClickListener);
+    }
+
+    @Override
+    public void setOnLongClickListener(@Nullable OnLongClickListener onLongClickListener) {
+        clDrawableButton.setOnLongClickListener(onLongClickListener);
     }
 
 }

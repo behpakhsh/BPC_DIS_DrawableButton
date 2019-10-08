@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="DisDrawableButton">
+        <attr name="disEnable" format="boolean" />
+        <attr name="disDisableBackgroundColor" format="color" />
         <attr name="disBackground" format="reference|color" />
         <attr name="disDrawableLeft" format="reference|color" />
         <attr name="disLeftTintColor" format="color" />
