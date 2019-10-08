@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DisDrawableButton">
+        <attr name="disBackground" format="reference|color" />
+        <attr name="disDrawableLeft" format="reference|color" />
+        <attr name="disLeftTintColor" format="color" />
+        <attr name="disDrawableRight" format="reference|color" />
+        <attr name="disRightTintColor" format="color" />
+        <attr name="disText" format="reference|string" localization="suggested" />
+        <attr name="disTextColor" format="reference|color" />
+        <attr name="disTextSize" format="dimension" />
+        <attr name="disTextStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+            <flag name="bold_italic" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

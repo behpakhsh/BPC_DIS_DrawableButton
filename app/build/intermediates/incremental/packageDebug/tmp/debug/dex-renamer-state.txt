@@ -1,0 +1,4 @@
+#Tue Oct 08 10:35:59 GMT+03:30 2019
+base.0=D\:\\Project\\Behpaksh\\JitPackLibrary\\BPC_DIS_DrawableButton\\BPC_DIS_DrawableButton\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

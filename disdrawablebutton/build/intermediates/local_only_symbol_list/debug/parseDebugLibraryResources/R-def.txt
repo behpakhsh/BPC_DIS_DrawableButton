@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+attr? disBackground
+attr? disDrawableLeft
+attr? disDrawableRight
+attr? disLeftTintColor
+attr? disRightTintColor
+attr? disText
+attr? disTextColor
+attr? disTextSize
+attr? disTextStyle
+color disBackground
+color disTextColor
+dimen disPaddingBottom
+dimen disPaddingEnd
+dimen disPaddingStart
+dimen disPaddingTop
+dimen disTextMarginEnd
+dimen disTextMarginStart
+dimen disTextSize
+id cl_dis_drawable_button
+id img_drawable_left
+id img_drawable_right
+id txt_drawable_button
+layout dis_drawable_button
+string app_name
+styleable DisDrawableButton disBackground disDrawableLeft disLeftTintColor disDrawableRight disRightTintColor disText disTextColor disTextSize disTextStyle

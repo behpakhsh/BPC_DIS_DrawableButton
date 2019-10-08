@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="disTextSize">14dp</dimen>
+    <dimen name="disPaddingTop">10dp</dimen>
+    <dimen name="disPaddingBottom">10dp</dimen>
+    <dimen name="disPaddingStart">20dp</dimen>
+    <dimen name="disPaddingEnd">20dp</dimen>
+    <dimen name="disTextMarginStart">5dp</dimen>
+    <dimen name="disTextMarginEnd">5dp</dimen>
+
+</resources>
