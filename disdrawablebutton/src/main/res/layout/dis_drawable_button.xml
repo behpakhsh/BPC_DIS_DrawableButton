@@ -18,12 +18,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_marginEnd="@dimen/disPaddingStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/disPaddingTop"
         android:layout_marginTop="@dimen/disPaddingEnd"
+        android:layout_marginEnd="@dimen/disPaddingStart"
         android:layout_marginBottom="@dimen/disPaddingBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
