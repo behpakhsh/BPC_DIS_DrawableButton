@@ -11,6 +11,8 @@
     <dimen name="disTextSize">14dp</dimen>
     <string name="app_name">DisDrawableButton</string>
     <declare-styleable name="DisDrawableButton">
+        <attr format="boolean" name="disEnable"/>
+        <attr format="color" name="disDisableBackgroundColor"/>
         <attr format="reference|color" name="disBackground"/>
         <attr format="reference|color" name="disDrawableLeft"/>
         <attr format="color" name="disLeftTintColor"/>

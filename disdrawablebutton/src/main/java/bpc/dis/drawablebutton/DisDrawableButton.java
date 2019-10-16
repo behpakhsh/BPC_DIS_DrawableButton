@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -19,9 +20,11 @@ public class DisDrawableButton extends FrameLayout {
     private AppCompatImageView imgDrawableLeft;
     private AppCompatImageView imgDrawableRight;
     private AppCompatTextView txtDrawableButton;
+    private AppCompatButton btnDrawableButton;
 
     private int backgroundColor;
     private int disableColor;
+    private boolean enableClickAnimation;
 
     public DisDrawableButton(Context context) {
         super(context);
@@ -41,6 +44,7 @@ public class DisDrawableButton extends FrameLayout {
     public void init(Context context, AttributeSet attrs, int defStyleAttr) {
         View view = inflate(context, R.layout.dis_drawable_button, this);
         clDrawableButton = view.findViewById(R.id.cl_dis_drawable_button);
+        btnDrawableButton = view.findViewById(R.id.btn_dis_drawable_button);
         imgDrawableLeft = view.findViewById(R.id.img_drawable_left);
         imgDrawableRight = view.findViewById(R.id.img_drawable_right);
         txtDrawableButton = view.findViewById(R.id.txt_drawable_button);
@@ -72,6 +76,11 @@ public class DisDrawableButton extends FrameLayout {
 
         boolean enable = styledAttributes.getBoolean(R.styleable.DisDrawableButton_disEnable, true);
         setEnable(enable);
+
+        //enable
+
+        boolean enableClickAnimation = styledAttributes.getBoolean(R.styleable.DisDrawableButton_disEnableClickAnimation, true);
+        setEnableClickAnimation(enableClickAnimation);
     }
 
     private void setupDrawable(TypedArray styledAttributes) {
@@ -150,7 +159,17 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
-    private void setDisableColor(int disableColor) {
+    public void setEnableClickAnimation(boolean enableClickAnimation) {
+        this.enableClickAnimation = enableClickAnimation;
+        if (enableClickAnimation) {
+            btnDrawableButton.setVisibility(View.VISIBLE);
+        } else {
+            btnDrawableButton.setVisibility(View.GONE);
+        }
+    }
+
+
+    public void setDisableColor(int disableColor) {
         this.disableColor = disableColor;
     }
 
@@ -213,12 +232,20 @@ public class DisDrawableButton extends FrameLayout {
 
     @Override
     public void setOnClickListener(@Nullable OnClickListener onClickListener) {
-        clDrawableButton.setOnClickListener(onClickListener);
+        if (enableClickAnimation) {
+            btnDrawableButton.setOnClickListener(onClickListener);
+        } else {
+            clDrawableButton.setOnClickListener(onClickListener);
+        }
     }
 
     @Override
     public void setOnLongClickListener(@Nullable OnLongClickListener onLongClickListener) {
-        clDrawableButton.setOnLongClickListener(onLongClickListener);
+        if (enableClickAnimation) {
+            btnDrawableButton.setOnLongClickListener(onLongClickListener);
+        } else {
+            clDrawableButton.setOnLongClickListener(onLongClickListener);
+        }
     }
 
 }

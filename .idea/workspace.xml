@@ -7,13 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffaca0a5-f319-43ed-bd57-0b14eadfec16" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/javac/debug/classes/bpc/dis/drawablebutton/DisDrawableButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/javac/debug/classes/bpc/dis/drawablebutton/DisDrawableButton$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/javac/debug/classes/bpc/dis/drawablebutton/DisDrawableButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/javac/debug/classes/bpc/dis/drawablebutton/DisDrawableButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/local_only_symbol_list/debug/parseDebugLibraryResources/R-def.txt" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/local_only_symbol_list/debug/parseDebugLibraryResources/R-def.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/packaged-classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/intermediates/symbols/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/build/outputs/aar/disdrawablebutton-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/build/outputs/aar/disdrawablebutton-debug.aar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/dis_drawable_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/dis_drawable_button.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,30 +52,47 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="209">
+              <caret line="81" column="106" selection-start-line="81" selection-start-column="106" selection-end-line="81" selection-end-column="106" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4030#4086#0" expanded="true" />
-                <element signature="e#3544#3545#0" expanded="true" />
-                <element signature="e#3602#3603#0" expanded="true" />
-                <element signature="e#5139#5140#0" expanded="true" />
-                <element signature="e#5227#5228#0" expanded="true" />
-                <element signature="e#6229#6230#0" expanded="true" />
+                <element signature="method#DisDrawableButton#0;class#DisDrawableButton#0" />
+                <element signature="method#DisDrawableButton#1;class#DisDrawableButton#0" />
+                <element signature="method#DisDrawableButton#2;class#DisDrawableButton#0" />
+                <element signature="method#init#0;class#DisDrawableButton#0" />
+                <element signature="method#setupDrawable#0;class#DisDrawableButton#0" />
+                <element signature="method#setupText#0;class#DisDrawableButton#0" />
+                <element signature="e#4309#4699#0" />
+                <element signature="method#setEnable#0;class#DisDrawableButton#0" />
+                <element signature="e#4919#4974#1" />
+                <element signature="e#4980#5032#1" />
+                <element signature="method#setEnableClickAnimation#0;class#DisDrawableButton#0" />
+                <element signature="e#5515#5573#1" />
+                <element signature="e#5590#5661#1" />
+                <element signature="e#5651#5700#1" />
+                <element signature="e#5740#5788#1" />
+                <element signature="method#setTextSize#0;class#DisDrawableButton#0" />
+                <element signature="method#setTextStyle#0;class#DisDrawableButton#0" />
+                <element signature="e#5523#6120#0" />
+                <element signature="e#6732#6790#1" />
+                <element signature="method#setRightDrawable#0;class#DisDrawableButton#0" />
+                <element signature="e#6320#6393#1" />
+                <element signature="method#setRightTintColor#0;class#DisDrawableButton#0" />
+                <element signature="e#6491#6563#1" />
+                <element signature="method#setLeftDrawable#0;class#DisDrawableButton#0" />
+                <element signature="e#6655#6726#1" />
+                <element signature="method#setLeftTintColor#0;class#DisDrawableButton#0" />
+                <element signature="e#6821#6891#1" />
+                <element signature="method#setOnClickListener#0;class#DisDrawableButton#0" />
+                <element signature="e#7750#7828#1" />
+                <element signature="e#7833#7873#1" />
+                <element signature="method#setOnLongClickListener#0;class#DisDrawableButton#0" />
+                <element signature="e#8058#8144#1" />
+                <element signature="e#8149#8227#1" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -70,12 +105,14 @@
         <option value="resourceFile" />
         <option value="valueResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>text</find>
+      <find>back</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,18 +125,18 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/drawable/test.xml" />
-        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/color.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/disdrawablebutton/build.gradle" />
-        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/dis_drawable_button.xml" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/test.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/bpc/dis/drawablebutton/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/bpc/dis/drawablebutton/ExampleInstrumentedTest.java" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisTextStyle.java" />
+        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/test.xml" />
+        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/dis_drawable_button.xml" />
+        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/color.xml" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml" />
-        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/test.xml" />
       </list>
     </option>
   </component>
@@ -114,8 +151,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -134,17 +170,12 @@
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
-            <path>
-              <item name="BPC_DIS_DrawableButton" type="1abcf292:AndroidViewProjectNode" />
-              <item name="disdrawablebutton" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570518776848</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix onClickListener&#10;fix disable Color">
+      <created>1570526007558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570526007558</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -264,7 +302,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24140401" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2256447" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -277,7 +315,7 @@
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="5" weight="0.35531628" />
+      <window_info anchor="bottom" id="Build" order="5" weight="0.2987887" />
       <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32974428" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -290,7 +328,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize" />
+    <MESSAGE value="fix onClickListener&#10;fix disable Color" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix onClickListener&#10;fix disable Color" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
@@ -362,12 +401,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="jar://D:/AndroidSDK/platforms/android-29/android.jar!/android/content/res/TypedArray.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -380,20 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -412,10 +437,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisTextStyle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#211#212#0" expanded="true" />
@@ -423,47 +455,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/dis_drawable_button.xml">
+    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/test.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="231">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/dis_drawable_button.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
-            <element signature="e#462#484#0" expanded="true" />
+            <element signature="e#441#624#0" />
+            <element signature="e#776#2170#0" />
+            <element signature="e#823#847#0" expanded="true" />
+            <element signature="e#883#905#0" expanded="true" />
+            <element signature="e#939#961#0" expanded="true" />
+            <element signature="e#998#1023#0" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        <state relative-caret-position="315">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#791#809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="209">
+          <caret line="81" column="106" selection-start-line="81" selection-start-column="106" selection-end-line="81" selection-end-column="106" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4030#4086#0" expanded="true" />
-            <element signature="e#3544#3545#0" expanded="true" />
-            <element signature="e#3602#3603#0" expanded="true" />
-            <element signature="e#5139#5140#0" expanded="true" />
-            <element signature="e#5227#5228#0" expanded="true" />
-            <element signature="e#6229#6230#0" expanded="true" />
+            <element signature="method#DisDrawableButton#0;class#DisDrawableButton#0" />
+            <element signature="method#DisDrawableButton#1;class#DisDrawableButton#0" />
+            <element signature="method#DisDrawableButton#2;class#DisDrawableButton#0" />
+            <element signature="method#init#0;class#DisDrawableButton#0" />
+            <element signature="method#setupDrawable#0;class#DisDrawableButton#0" />
+            <element signature="method#setupText#0;class#DisDrawableButton#0" />
+            <element signature="e#4309#4699#0" />
+            <element signature="method#setEnable#0;class#DisDrawableButton#0" />
+            <element signature="e#4919#4974#1" />
+            <element signature="e#4980#5032#1" />
+            <element signature="method#setEnableClickAnimation#0;class#DisDrawableButton#0" />
+            <element signature="e#5515#5573#1" />
+            <element signature="e#5590#5661#1" />
+            <element signature="e#5651#5700#1" />
+            <element signature="e#5740#5788#1" />
+            <element signature="method#setTextSize#0;class#DisDrawableButton#0" />
+            <element signature="method#setTextStyle#0;class#DisDrawableButton#0" />
+            <element signature="e#5523#6120#0" />
+            <element signature="e#6732#6790#1" />
+            <element signature="method#setRightDrawable#0;class#DisDrawableButton#0" />
+            <element signature="e#6320#6393#1" />
+            <element signature="method#setRightTintColor#0;class#DisDrawableButton#0" />
+            <element signature="e#6491#6563#1" />
+            <element signature="method#setLeftDrawable#0;class#DisDrawableButton#0" />
+            <element signature="e#6655#6726#1" />
+            <element signature="method#setLeftTintColor#0;class#DisDrawableButton#0" />
+            <element signature="e#6821#6891#1" />
+            <element signature="method#setOnClickListener#0;class#DisDrawableButton#0" />
+            <element signature="e#7750#7828#1" />
+            <element signature="e#7833#7873#1" />
+            <element signature="method#setOnLongClickListener#0;class#DisDrawableButton#0" />
+            <element signature="e#8058#8144#1" />
+            <element signature="e#8149#8227#1" />
           </folding>
         </state>
       </provider>

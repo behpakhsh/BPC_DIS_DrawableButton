@@ -1,8 +1,10 @@
 R_DEF: Internal format may change without notice
 local
 attr? disBackground
+attr? disDisableBackgroundColor
 attr? disDrawableLeft
 attr? disDrawableRight
+attr? disEnable
 attr? disLeftTintColor
 attr? disRightTintColor
 attr? disText
@@ -24,4 +26,4 @@ id img_drawable_right
 id txt_drawable_button
 layout dis_drawable_button
 string app_name
-styleable DisDrawableButton disBackground disDrawableLeft disLeftTintColor disDrawableRight disRightTintColor disText disTextColor disTextSize disTextStyle
+styleable DisDrawableButton disEnable disDisableBackgroundColor disBackground disDrawableLeft disLeftTintColor disDrawableRight disRightTintColor disText disTextColor disTextSize disTextStyle

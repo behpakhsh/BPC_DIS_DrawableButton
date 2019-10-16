@@ -3,15 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cl_dis_drawable_button"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:clickable="true"
-    android:focusable="true"
-    android:paddingStart="@dimen/disPaddingStart"
-    android:paddingTop="@dimen/disPaddingTop"
-    android:paddingEnd="@dimen/disPaddingEnd"
-    android:paddingBottom="@dimen/disPaddingBottom">
+    android:focusable="true">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dis_drawable_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:layout_marginEnd="@dimen/disPaddingStart"
+        android:layout_marginStart="@dimen/disPaddingTop"
+        android:layout_marginTop="@dimen/disPaddingEnd"
+        android:layout_marginBottom="@dimen/disPaddingBottom"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="horizontal"
