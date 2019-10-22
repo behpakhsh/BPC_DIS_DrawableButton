@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffaca0a5-f319-43ed-bd57-0b14eadfec16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,14 +31,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="314">
+              <caret line="160" column="16" selection-start-line="160" selection-start-column="16" selection-end-line="160" selection-end-column="16" />
               <folding>
                 <element signature="method#DisDrawableButton#1;class#DisDrawableButton#0" />
                 <element signature="method#DisDrawableButton#2;class#DisDrawableButton#0" />
                 <element signature="method#setupDrawable#0;class#DisDrawableButton#0" />
                 <element signature="method#setupText#0;class#DisDrawableButton#0" />
-                <element signature="method#setEnable#0;class#DisDrawableButton#0" />
                 <element signature="method#setEnableClickAnimation#0;class#DisDrawableButton#0" />
                 <element signature="method#setTextSize#0;class#DisDrawableButton#0" />
                 <element signature="method#setTextStyle#0;class#DisDrawableButton#0" />
@@ -70,6 +68,7 @@
     <findStrings>
       <find>text</find>
       <find>back</find>
+      <find>background</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,11 +88,11 @@
         <option value="$PROJECT_DIR$/app/src/androidTest/java/bpc/dis/drawablebutton/ExampleInstrumentedTest.java" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisTextStyle.java" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/test.xml" />
-        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/color.xml" />
-        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/dis_drawable_button.xml" />
+        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/color.xml" />
+        <option value="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" />
       </list>
     </option>
   </component>
@@ -251,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571300662815</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix color bug">
+      <created>1571744557925</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571744557925</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix color bug">
+      <created>1571745361617</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571745361617</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -289,7 +302,8 @@
     <MESSAGE value="implement clickAnim" />
     <MESSAGE value="fix height bug" />
     <MESSAGE value="fix margin bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix margin bug" />
+    <MESSAGE value="fix color bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix color bug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.1.0/4ae37fad1fe95b42aa47a720908df37ba5d3c85e/core-1.1.0-sources.jar!/androidx/core/view/TintableBackgroundView.java">
@@ -402,13 +416,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/test.xml" />
-    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -441,16 +448,33 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+    <entry file="jar://D:/AndroidSDK/platforms/android-29/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="2446" column="16" selection-start-line="2446" selection-start-column="16" selection-end-line="2446" selection-end-column="16" />
+          <folding>
+            <element signature="e#70207#70208#0" expanded="true" />
+            <element signature="e#70258#70259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="314">
+          <caret line="160" column="16" selection-start-line="160" selection-start-column="16" selection-end-line="160" selection-end-column="16" />
           <folding>
             <element signature="method#DisDrawableButton#1;class#DisDrawableButton#0" />
             <element signature="method#DisDrawableButton#2;class#DisDrawableButton#0" />
             <element signature="method#setupDrawable#0;class#DisDrawableButton#0" />
             <element signature="method#setupText#0;class#DisDrawableButton#0" />
-            <element signature="method#setEnable#0;class#DisDrawableButton#0" />
             <element signature="method#setEnableClickAnimation#0;class#DisDrawableButton#0" />
             <element signature="method#setTextSize#0;class#DisDrawableButton#0" />
             <element signature="method#setTextStyle#0;class#DisDrawableButton#0" />
