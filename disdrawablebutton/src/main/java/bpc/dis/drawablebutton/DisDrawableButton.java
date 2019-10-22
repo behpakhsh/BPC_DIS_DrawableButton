@@ -23,7 +23,7 @@ public class DisDrawableButton extends FrameLayout {
     private AppCompatButton btnDrawableButton;
 
     private int backgroundColor;
-    private int disableColor;
+    private int disableBackgroundColor;
     private boolean enableClickAnimation;
 
     public DisDrawableButton(Context context) {
@@ -64,13 +64,13 @@ public class DisDrawableButton extends FrameLayout {
 
         int backgroundColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disBackground, context.getResources().getColor(R.color.disBackground));
         this.backgroundColor = backgroundColor;
-        setBackgroundRes(backgroundColor);
+        setBackgroundColor(backgroundColor);
 
 
         //background
 
-        int disableColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disDisableBackgroundColor, backgroundColor);
-        setDisableColor(disableColor);
+        int disableBackgroundColorRes = styledAttributes.getColor(R.styleable.DisDrawableButton_disDisableBackgroundColor, context.getResources().getColor(R.color.disDisableBackground));
+        setDisableBackgroundColorRes(disableBackgroundColorRes);
 
         //enable
 
@@ -146,8 +146,8 @@ public class DisDrawableButton extends FrameLayout {
     }
 
 
-    public void setBackgroundRes(int color) {
-        clDrawableButton.setBackgroundResource(color);
+    public void setBackgroundColorRes(int backgroundColorRes) {
+        clDrawableButton.setBackgroundResource(backgroundColorRes);
     }
 
     public void setBackgroundColor(int color) {
@@ -157,9 +157,9 @@ public class DisDrawableButton extends FrameLayout {
     public void setEnable(boolean enable) {
         clDrawableButton.setEnabled(enable);
         if (enable) {
-            setBackgroundRes(backgroundColor);
+            setBackgroundColorRes(backgroundColor);
         } else {
-            setBackgroundRes(disableColor);
+            setBackgroundColorRes(disableBackgroundColor);
         }
     }
 
@@ -173,8 +173,8 @@ public class DisDrawableButton extends FrameLayout {
     }
 
 
-    public void setDisableColor(int disableColor) {
-        this.disableColor = disableColor;
+    public void setDisableBackgroundColorRes(int disableBackgroundColor) {
+        this.disableBackgroundColor = disableBackgroundColor;
     }
 
 
