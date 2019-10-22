@@ -64,7 +64,7 @@ public class DisDrawableButton extends FrameLayout {
 
         int backgroundColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disBackground, context.getResources().getColor(R.color.disBackground));
         this.backgroundColor = backgroundColor;
-        setBackground(backgroundColor);
+        setBackgroundRes(backgroundColor);
 
 
         //background
@@ -146,16 +146,20 @@ public class DisDrawableButton extends FrameLayout {
     }
 
 
-    public void setBackground(int color) {
+    public void setBackgroundRes(int color) {
+        clDrawableButton.setBackgroundResource(color);
+    }
+
+    public void setBackgroundColor(int color) {
         clDrawableButton.setBackgroundColor(color);
     }
 
     public void setEnable(boolean enable) {
         clDrawableButton.setEnabled(enable);
         if (enable) {
-            setBackground(backgroundColor);
+            setBackgroundRes(backgroundColor);
         } else {
-            setBackground(disableColor);
+            setBackgroundRes(disableColor);
         }
     }
 
