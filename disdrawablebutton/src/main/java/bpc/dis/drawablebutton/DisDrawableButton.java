@@ -152,6 +152,7 @@ public class DisDrawableButton extends FrameLayout {
 
     public void setEnable(boolean enable) {
         clDrawableButton.setEnabled(enable);
+        btnDrawableButton.setEnabled(enable);
         if (enable) {
             setBackground(backgroundColor);
         } else {
