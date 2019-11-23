@@ -150,6 +150,10 @@ public class DisDrawableButton extends FrameLayout {
         clDrawableButton.setBackgroundColor(color);
     }
 
+    public void setBackgroundDrawable(int res) {
+        clDrawableButton.setBackgroundResource(res);
+    }
+
     public void setEnable(boolean enable) {
         clDrawableButton.setEnabled(enable);
         btnDrawableButton.setEnabled(enable);
