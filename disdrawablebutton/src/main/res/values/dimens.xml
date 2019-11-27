@@ -8,5 +8,7 @@
     <dimen name="disMarginEnd">20dp</dimen>
     <dimen name="disTextMarginStart">5dp</dimen>
     <dimen name="disTextMarginEnd">5dp</dimen>
+    <dimen name="disUnderlineHeight">2dp</dimen>
+    <dimen name="disUnderlineMarginTop">5dp</dimen>
 
 </resources>

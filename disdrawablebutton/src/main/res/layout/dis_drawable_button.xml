@@ -18,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/ll_dis_drawable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/disMarginStart"
@@ -51,5 +52,16 @@
             android:layout_gravity="center_vertical" />
 
     </LinearLayout>
+
+    <View
+        android:id="@+id/v_underline"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/disUnderlineHeight"
+        android:layout_marginTop="@dimen/disUnderlineMarginTop"
+        android:background="@color/disUnderlineColor"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/ll_dis_drawable"
+        app:layout_constraintStart_toStartOf="@id/ll_dis_drawable"
+        app:layout_constraintTop_toBottomOf="@id/ll_dis_drawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

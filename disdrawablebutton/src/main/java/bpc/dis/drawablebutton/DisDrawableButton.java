@@ -6,6 +6,7 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
@@ -21,6 +22,7 @@ public class DisDrawableButton extends FrameLayout {
     private AppCompatImageView imgDrawableRight;
     private AppCompatTextView txtDrawableButton;
     private AppCompatButton btnDrawableButton;
+    private View vUnderline;
 
     private int backgroundColor;
     private int disableColor;
@@ -48,6 +50,7 @@ public class DisDrawableButton extends FrameLayout {
         imgDrawableLeft = view.findViewById(R.id.img_drawable_left);
         imgDrawableRight = view.findViewById(R.id.img_drawable_right);
         txtDrawableButton = view.findViewById(R.id.txt_drawable_button);
+        vUnderline = view.findViewById(R.id.v_underline);
         setupView(context, attrs);
     }
 
@@ -56,7 +59,26 @@ public class DisDrawableButton extends FrameLayout {
         setupLayout(context, styledAttributes);
         setupDrawable(styledAttributes);
         setupText(context, styledAttributes);
+        setupUnderline(context, styledAttributes);
         styledAttributes.recycle();
+    }
+
+    private void setupUnderline(Context context, TypedArray styledAttributes) {
+        //enable
+
+        boolean underlineEnable = styledAttributes.getBoolean(R.styleable.DisDrawableButton_disUnderlineEnable, false);
+        setUnderlineEnable(underlineEnable);
+
+        //color
+
+        int underlineColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disUnderlineColor, context.getResources().getColor(R.color.disUnderlineColor));
+        setUnderlineColor(underlineColor);
+
+        //heightSize
+
+        float underlineHeight = styledAttributes.getDimension(R.styleable.DisDrawableButton_disUnderlineHeight, context.getResources().getDimension(R.dimen.disTextSize));
+        setUnderlineHeight(underlineHeight);
+
     }
 
     private void setupLayout(Context context, TypedArray styledAttributes) {
@@ -173,11 +195,9 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
-
     public void setDisableColor(int disableColor) {
         this.disableColor = disableColor;
     }
-
 
     public void setText(String text) {
         txtDrawableButton.setText(text);
@@ -209,7 +229,6 @@ public class DisDrawableButton extends FrameLayout {
         txtDrawableButton.setTextColor(textColor);
     }
 
-
     public void setRightDrawable(int rightDrawable) {
         if (rightDrawable != -1) {
             imgDrawableRight.setImageResource(rightDrawable);
@@ -234,6 +253,25 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
+    public void setUnderlineHeight(float underlineHeight) {
+        underlineHeight = underlineHeight / getResources().getDisplayMetrics().density;
+        ViewGroup.LayoutParams params = vUnderline.getLayoutParams();
+        params.height = (int) underlineHeight;
+        vUnderline.requestLayout();
+    }
+
+    public void setUnderlineColor(int underlineColor) {
+        vUnderline.setBackgroundColor(underlineColor);
+    }
+
+    public void setUnderlineEnable(boolean underlineEnable) {
+        if (underlineEnable) {
+            vUnderline.setVisibility(VISIBLE);
+        } else {
+            vUnderline.setVisibility(GONE);
+        }
+    }
+
 
     @Override
     public void setOnClickListener(@Nullable OnClickListener onClickListener) {
@@ -252,5 +290,6 @@ public class DisDrawableButton extends FrameLayout {
             clDrawableButton.setOnLongClickListener(onLongClickListener);
         }
     }
+
 
 }
