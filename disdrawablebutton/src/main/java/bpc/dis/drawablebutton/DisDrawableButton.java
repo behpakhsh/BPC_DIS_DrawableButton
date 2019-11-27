@@ -76,7 +76,7 @@ public class DisDrawableButton extends FrameLayout {
 
         //heightSize
 
-        float underlineHeight = styledAttributes.getDimension(R.styleable.DisDrawableButton_disUnderlineHeight, context.getResources().getDimension(R.dimen.disTextSize));
+        float underlineHeight = styledAttributes.getDimension(R.styleable.DisDrawableButton_disUnderlineHeight, context.getResources().getDimension(R.dimen.disUnderlineHeight));
         setUnderlineHeight(underlineHeight);
 
     }

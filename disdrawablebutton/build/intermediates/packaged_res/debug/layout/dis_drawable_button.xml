@@ -2,19 +2,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cl_dis_drawable_button"
-    android:background="@color/disBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
-    android:focusable="true"
-    android:paddingStart="@dimen/disPaddingStart"
-    android:paddingTop="@dimen/disPaddingTop"
-    android:paddingEnd="@dimen/disPaddingEnd"
-    android:paddingBottom="@dimen/disPaddingBottom">
+    android:focusable="true">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dis_drawable_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/ll_dis_drawable"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/disMarginStart"
+        android:layout_marginTop="@dimen/disMarginTop"
+        android:layout_marginEnd="@dimen/disMarginEnd"
+        android:layout_marginBottom="@dimen/disMarginBottom"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,5 +52,16 @@
             android:layout_gravity="center_vertical" />
 
     </LinearLayout>
+
+    <View
+        android:id="@+id/v_underline"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/disUnderlineHeight"
+        android:layout_marginTop="@dimen/disUnderlineMarginTop"
+        android:background="@color/disUnderlineColor"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/ll_dis_drawable"
+        app:layout_constraintStart_toStartOf="@id/ll_dis_drawable"
+        app:layout_constraintTop_toBottomOf="@id/ll_dis_drawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
