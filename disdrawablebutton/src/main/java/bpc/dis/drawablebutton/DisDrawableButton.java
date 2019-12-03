@@ -291,5 +291,13 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
-
+    @Override
+    public boolean callOnClick() {
+        if (enableClickAnimation) {
+            btnDrawableButton.callOnClick();
+        } else {
+            clDrawableButton.callOnClick();
+        }
+        return super.callOnClick();
+    }
 }
