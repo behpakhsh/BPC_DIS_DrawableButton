@@ -300,4 +300,12 @@ public class DisDrawableButton extends FrameLayout {
         }
         return super.callOnClick();
     }
+
+    public void setTypeface(Typeface typeface) {
+        if (typeface == null) {
+            return;
+        }
+        txtDrawableButton.setTypeface(typeface);
+    }
+
 }
