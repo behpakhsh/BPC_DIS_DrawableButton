@@ -168,6 +168,10 @@ public class DisDrawableButton extends FrameLayout {
     }
 
 
+    public AppCompatTextView getTextView() {
+        return txtDrawableButton;
+    }
+
     public void setBackground(int color) {
         clDrawableButton.setBackgroundColor(color);
     }
