@@ -3,6 +3,7 @@ package bpc.dis.drawablebutton;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
@@ -24,8 +25,8 @@ public class DisDrawableButton extends FrameLayout {
     private AppCompatButton btnDrawableButton;
     private View vUnderline;
 
-    private int backgroundColor;
-    private int disableColor;
+    private int backgroundRes;
+    private int disableBackgroundRes;
     private boolean enableClickAnimation;
 
     public DisDrawableButton(Context context) {
@@ -84,15 +85,21 @@ public class DisDrawableButton extends FrameLayout {
     private void setupLayout(Context context, TypedArray styledAttributes) {
         //background
 
-        int backgroundColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disBackground, context.getResources().getColor(R.color.disBackground));
-        this.backgroundColor = backgroundColor;
-        setBackground(backgroundColor);
+        int backgroundRes = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disBackground, -1);
+        if (backgroundRes == -1) {
+            backgroundRes = R.color.disBackground;
+        }
+        this.backgroundRes = backgroundRes;
+        setBackgroundResource(backgroundRes);
 
 
         //background
 
-        int disableColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disDisableBackgroundColor, backgroundColor);
-        setDisableColor(disableColor);
+        int disableBackgroundColor = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDisableBackgroundColor, -1);
+        if (disableBackgroundColor == -1) {
+            disableBackgroundColor = R.color.disDisableBackground;
+        }
+        setDisableBackgroundRes(disableBackgroundColor);
 
         //enable
 
@@ -172,21 +179,28 @@ public class DisDrawableButton extends FrameLayout {
         return txtDrawableButton;
     }
 
-    public void setBackground(int color) {
-        clDrawableButton.setBackgroundColor(color);
+
+    public void setBackgroundResource(int res) {
+        clDrawableButton.setBackgroundResource(res);
     }
 
-    public void setBackgroundDrawable(int res) {
-        clDrawableButton.setBackgroundResource(res);
+    @Override
+    public void setBackgroundColor(int backgroundColor) {
+        clDrawableButton.setBackgroundColor(backgroundColor);
+    }
+
+    @Override
+    public void setBackgroundDrawable(Drawable background) {
+        clDrawableButton.setBackgroundDrawable(background);
     }
 
     public void setEnable(boolean enable) {
         clDrawableButton.setEnabled(enable);
         btnDrawableButton.setEnabled(enable);
         if (enable) {
-            setBackground(backgroundColor);
+            setBackgroundResource(backgroundRes);
         } else {
-            setBackground(disableColor);
+            setBackgroundResource(disableBackgroundRes);
         }
     }
 
@@ -199,8 +213,8 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
-    public void setDisableColor(int disableColor) {
-        this.disableColor = disableColor;
+    public void setDisableBackgroundRes(int disableBackgroundRes) {
+        this.disableBackgroundRes = disableBackgroundRes;
     }
 
     public void setText(String text) {
