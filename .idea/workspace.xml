@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffaca0a5-f319-43ed-bd57-0b14eadfec16" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,21 +31,57 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="200" column="25" selection-start-line="200" selection-start-column="25" selection-end-line="200" selection-end-column="25" />
+            <state relative-caret-position="272">
+              <caret line="261" column="50" selection-start-line="261" selection-start-column="50" selection-end-line="261" selection-end-column="50" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#DisDrawableButton#0;class#DisDrawableButton#0" />
+                <element signature="method#DisDrawableButton#1;class#DisDrawableButton#0" />
+                <element signature="method#DisDrawableButton#2;class#DisDrawableButton#0" />
+                <element signature="method#init#0;class#DisDrawableButton#0" />
                 <element signature="method#setupView#0;class#DisDrawableButton#0" />
                 <element signature="method#setupUnderline#0;class#DisDrawableButton#0" />
-                <element signature="e#3103#3166#0" expanded="true" />
                 <element signature="method#setupLayout#0;class#DisDrawableButton#0" />
+                <element signature="e#3456#3496#1" />
+                <element signature="e#3812#3874#1" />
                 <element signature="method#setupDrawable#0;class#DisDrawableButton#0" />
                 <element signature="method#setupText#0;class#DisDrawableButton#0" />
-                <element signature="e#5576#5632#0" expanded="true" />
-                <element signature="e#7065#7066#0" expanded="true" />
-                <element signature="e#7112#7113#0" expanded="true" />
-                <element signature="e#8057#8058#0" expanded="true" />
-                <element signature="e#8114#8115#0" expanded="true" />
+                <element signature="e#5640#6030#0" />
+                <element signature="method#setBackgroundColor#0;class#DisDrawableButton#0" />
+                <element signature="method#setBackgroundDrawable#0;class#DisDrawableButton#0" />
+                <element signature="method#setEnable#0;class#DisDrawableButton#0" />
+                <element signature="e#6491#6546#1" />
+                <element signature="e#6552#6604#1" />
+                <element signature="method#setEnableClickAnimation#0;class#DisDrawableButton#0" />
+                <element signature="e#6776#6846#1" />
+                <element signature="e#6852#6919#1" />
+                <element signature="method#setDisableBackgroundRes#0;class#DisDrawableButton#0" />
+                <element signature="method#setTextSize#0;class#DisDrawableButton#0" />
+                <element signature="method#setTextStyle#0;class#DisDrawableButton#0" />
+                <element signature="e#7408#8005#0" />
+                <element signature="method#setRightDrawable#0;class#DisDrawableButton#0" />
+                <element signature="e#8204#8277#1" />
+                <element signature="method#setRightTintColor#0;class#DisDrawableButton#0" />
+                <element signature="e#8375#8447#1" />
+                <element signature="method#setLeftDrawable#0;class#DisDrawableButton#0" />
+                <element signature="e#8539#8610#1" />
+                <element signature="method#setLeftTintColor#0;class#DisDrawableButton#0" />
+                <element signature="e#8705#8775#1" />
+                <element signature="method#setUnderlineHeight#0;class#DisDrawableButton#0" />
+                <element signature="method#setUnderlineColor#0;class#DisDrawableButton#0" />
+                <element signature="method#setUnderlineEnable#0;class#DisDrawableButton#0" />
+                <element signature="e#9300#9358#1" />
+                <element signature="e#9364#9419#1" />
+                <element signature="method#setOnClickListener#0;class#DisDrawableButton#0" />
+                <element signature="e#9556#9634#1" />
+                <element signature="e#9640#9717#1" />
+                <element signature="method#setOnLongClickListener#0;class#DisDrawableButton#0" />
+                <element signature="e#9865#9951#1" />
+                <element signature="e#9957#10042#1" />
+                <element signature="method#callOnClick#0;class#DisDrawableButton#0" />
+                <element signature="e#10133#10189#1" />
+                <element signature="e#10195#10250#1" />
+                <element signature="method#setTypeface#0;class#DisDrawableButton#0" />
+                <element signature="e#10373#10404#1" />
               </folding>
             </state>
           </provider>
@@ -326,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575892380385</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix setBackground res method">
+      <created>1575954248821</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1575954248821</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -411,7 +451,8 @@
     <MESSAGE value="add callOnClick method" />
     <MESSAGE value="add setTypeface method" />
     <MESSAGE value="add getTextView method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getTextView method" />
+    <MESSAGE value="fix setBackground res method" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix setBackground res method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.1.0/4ae37fad1fe95b42aa47a720908df37ba5d3c85e/core-1.1.0-sources.jar!/androidx/core/view/TintableBackgroundView.java">
@@ -581,21 +622,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="200" column="25" selection-start-line="200" selection-start-column="25" selection-end-line="200" selection-end-column="25" />
+        <state relative-caret-position="272">
+          <caret line="261" column="50" selection-start-line="261" selection-start-column="50" selection-end-line="261" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#DisDrawableButton#0;class#DisDrawableButton#0" />
+            <element signature="method#DisDrawableButton#1;class#DisDrawableButton#0" />
+            <element signature="method#DisDrawableButton#2;class#DisDrawableButton#0" />
+            <element signature="method#init#0;class#DisDrawableButton#0" />
             <element signature="method#setupView#0;class#DisDrawableButton#0" />
             <element signature="method#setupUnderline#0;class#DisDrawableButton#0" />
-            <element signature="e#3103#3166#0" expanded="true" />
             <element signature="method#setupLayout#0;class#DisDrawableButton#0" />
+            <element signature="e#3456#3496#1" />
+            <element signature="e#3812#3874#1" />
             <element signature="method#setupDrawable#0;class#DisDrawableButton#0" />
             <element signature="method#setupText#0;class#DisDrawableButton#0" />
-            <element signature="e#5576#5632#0" expanded="true" />
-            <element signature="e#7065#7066#0" expanded="true" />
-            <element signature="e#7112#7113#0" expanded="true" />
-            <element signature="e#8057#8058#0" expanded="true" />
-            <element signature="e#8114#8115#0" expanded="true" />
+            <element signature="e#5640#6030#0" />
+            <element signature="method#setBackgroundColor#0;class#DisDrawableButton#0" />
+            <element signature="method#setBackgroundDrawable#0;class#DisDrawableButton#0" />
+            <element signature="method#setEnable#0;class#DisDrawableButton#0" />
+            <element signature="e#6491#6546#1" />
+            <element signature="e#6552#6604#1" />
+            <element signature="method#setEnableClickAnimation#0;class#DisDrawableButton#0" />
+            <element signature="e#6776#6846#1" />
+            <element signature="e#6852#6919#1" />
+            <element signature="method#setDisableBackgroundRes#0;class#DisDrawableButton#0" />
+            <element signature="method#setTextSize#0;class#DisDrawableButton#0" />
+            <element signature="method#setTextStyle#0;class#DisDrawableButton#0" />
+            <element signature="e#7408#8005#0" />
+            <element signature="method#setRightDrawable#0;class#DisDrawableButton#0" />
+            <element signature="e#8204#8277#1" />
+            <element signature="method#setRightTintColor#0;class#DisDrawableButton#0" />
+            <element signature="e#8375#8447#1" />
+            <element signature="method#setLeftDrawable#0;class#DisDrawableButton#0" />
+            <element signature="e#8539#8610#1" />
+            <element signature="method#setLeftTintColor#0;class#DisDrawableButton#0" />
+            <element signature="e#8705#8775#1" />
+            <element signature="method#setUnderlineHeight#0;class#DisDrawableButton#0" />
+            <element signature="method#setUnderlineColor#0;class#DisDrawableButton#0" />
+            <element signature="method#setUnderlineEnable#0;class#DisDrawableButton#0" />
+            <element signature="e#9300#9358#1" />
+            <element signature="e#9364#9419#1" />
+            <element signature="method#setOnClickListener#0;class#DisDrawableButton#0" />
+            <element signature="e#9556#9634#1" />
+            <element signature="e#9640#9717#1" />
+            <element signature="method#setOnLongClickListener#0;class#DisDrawableButton#0" />
+            <element signature="e#9865#9951#1" />
+            <element signature="e#9957#10042#1" />
+            <element signature="method#callOnClick#0;class#DisDrawableButton#0" />
+            <element signature="e#10133#10189#1" />
+            <element signature="e#10195#10250#1" />
+            <element signature="method#setTypeface#0;class#DisDrawableButton#0" />
+            <element signature="e#10373#10404#1" />
           </folding>
         </state>
       </provider>

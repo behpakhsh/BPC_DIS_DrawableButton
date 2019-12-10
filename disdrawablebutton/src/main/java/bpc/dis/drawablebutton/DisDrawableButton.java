@@ -95,11 +95,11 @@ public class DisDrawableButton extends FrameLayout {
 
         //background
 
-        int disableBackgroundColor = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDisableBackgroundColor, -1);
-        if (disableBackgroundColor == -1) {
-            disableBackgroundColor = R.color.disDisableBackground;
+        int disableBackgroundRes = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDisableBackground, -1);
+        if (disableBackgroundRes == -1) {
+            disableBackgroundRes = R.color.disDisableBackground;
         }
-        setDisableBackgroundRes(disableBackgroundColor);
+        setDisableBackgroundRes(disableBackgroundRes);
 
         //enable
 
