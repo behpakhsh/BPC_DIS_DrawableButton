@@ -15,10 +15,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class DisDrawableButton extends FrameLayout {
 
-    private LinearLayout llDrawableButton;
+    private ConstraintLayout clDrawableButton;
+    private LinearLayout llDisDrawable;
     private AppCompatImageView imgDrawableLeft;
     private AppCompatImageView imgDrawableRight;
     private AppCompatTextView txtDrawableButton;
@@ -46,7 +48,8 @@ public class DisDrawableButton extends FrameLayout {
 
     public void init(Context context, AttributeSet attrs, int defStyleAttr) {
         View view = inflate(context, R.layout.dis_drawable_button, this);
-        llDrawableButton = view.findViewById(R.id.ll_dis_drawable_button);
+        clDrawableButton = view.findViewById(R.id.cl_dis_drawable_button);
+        llDisDrawable = view.findViewById(R.id.ll_dis_drawable);
         btnDrawableButton = view.findViewById(R.id.btn_dis_drawable_button);
         imgDrawableLeft = view.findViewById(R.id.img_drawable_left);
         imgDrawableRight = view.findViewById(R.id.img_drawable_right);
@@ -174,26 +177,28 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
+
     public AppCompatTextView getTextView() {
         return txtDrawableButton;
     }
 
+
     public void setBackgroundResource(int res) {
-        llDrawableButton.setBackgroundResource(res);
+        clDrawableButton.setBackgroundResource(res);
     }
 
     @Override
     public void setBackgroundColor(int backgroundColor) {
-        llDrawableButton.setBackgroundColor(backgroundColor);
+        clDrawableButton.setBackgroundColor(backgroundColor);
     }
 
     @Override
     public void setBackgroundDrawable(Drawable background) {
-        llDrawableButton.setBackgroundDrawable(background);
+        clDrawableButton.setBackgroundDrawable(background);
     }
 
     public void setEnable(boolean enable) {
-        llDrawableButton.setEnabled(enable);
+        clDrawableButton.setEnabled(enable);
         btnDrawableButton.setEnabled(enable);
         if (enable) {
             setBackgroundResource(backgroundRes);
@@ -288,20 +293,15 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
-    public void setTypeface(Typeface typeface) {
-        if (typeface == null) {
-            return;
-        }
-        txtDrawableButton.setTypeface(typeface);
-    }
 
     @Override
     public void setOnClickListener(@Nullable OnClickListener onClickListener) {
         if (enableClickAnimation) {
             btnDrawableButton.setOnClickListener(onClickListener);
         } else {
-            llDrawableButton.setOnClickListener(onClickListener);
+            clDrawableButton.setOnClickListener(onClickListener);
         }
+        llDisDrawable.setOnClickListener(onClickListener);
     }
 
     @Override
@@ -309,8 +309,9 @@ public class DisDrawableButton extends FrameLayout {
         if (enableClickAnimation) {
             btnDrawableButton.setOnLongClickListener(onLongClickListener);
         } else {
-            llDrawableButton.setOnLongClickListener(onLongClickListener);
+            clDrawableButton.setOnLongClickListener(onLongClickListener);
         }
+        llDisDrawable.setOnLongClickListener(onLongClickListener);
     }
 
     @Override
@@ -318,9 +319,17 @@ public class DisDrawableButton extends FrameLayout {
         if (enableClickAnimation) {
             btnDrawableButton.callOnClick();
         } else {
-            llDrawableButton.callOnClick();
+            clDrawableButton.callOnClick();
         }
+        llDisDrawable.callOnClick();
         return super.callOnClick();
+    }
+
+    public void setTypeface(Typeface typeface) {
+        if (typeface == null) {
+            return;
+        }
+        txtDrawableButton.setTypeface(typeface);
     }
 
 }
