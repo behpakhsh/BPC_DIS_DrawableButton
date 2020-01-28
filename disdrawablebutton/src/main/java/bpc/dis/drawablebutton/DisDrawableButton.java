@@ -325,6 +325,18 @@ public class DisDrawableButton extends FrameLayout {
         return super.callOnClick();
     }
 
+    @Override
+    protected void onDetachedFromWindow() {
+        clDrawableButton = null;
+        llDisDrawable = null;
+        imgDrawableLeft = null;
+        imgDrawableRight = null;
+        txtDrawableButton = null;
+        btnDrawableButton = null;
+        vUnderline = null;
+        super.onDetachedFromWindow();
+    }
+
     public void setTypeface(Typeface typeface) {
         if (typeface == null) {
             return;
