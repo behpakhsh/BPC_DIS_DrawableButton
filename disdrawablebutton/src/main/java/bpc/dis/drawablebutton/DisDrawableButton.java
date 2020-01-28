@@ -55,19 +55,18 @@ public class DisDrawableButton extends FrameLayout {
         imgDrawableRight = view.findViewById(R.id.img_drawable_right);
         txtDrawableButton = view.findViewById(R.id.txt_drawable_button);
         vUnderline = view.findViewById(R.id.v_underline);
-        setupView(context, attrs);
+        setupView(context.obtainStyledAttributes(attrs, R.styleable.DisDrawableButton));
     }
 
-    private void setupView(Context context, AttributeSet attrs) {
-        TypedArray styledAttributes = context.obtainStyledAttributes(attrs, R.styleable.DisDrawableButton);
-        setupLayout(context, styledAttributes);
+    private void setupView(TypedArray styledAttributes) {
+        setupLayout(styledAttributes);
         setupDrawable(styledAttributes);
-        setupText(context, styledAttributes);
-        setupUnderline(context, styledAttributes);
+        setupText(styledAttributes);
+        setupUnderline(styledAttributes);
         styledAttributes.recycle();
     }
 
-    private void setupUnderline(Context context, TypedArray styledAttributes) {
+    private void setupUnderline(TypedArray styledAttributes) {
         //enable
 
         boolean underlineEnable = styledAttributes.getBoolean(R.styleable.DisDrawableButton_disUnderlineEnable, false);
@@ -75,17 +74,17 @@ public class DisDrawableButton extends FrameLayout {
 
         //color
 
-        int underlineColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disUnderlineColor, context.getResources().getColor(R.color.disUnderlineColor));
+        int underlineColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disUnderlineColor, getResources().getColor(R.color.disUnderlineColor));
         setUnderlineColor(underlineColor);
 
         //heightSize
 
-        float underlineHeight = styledAttributes.getDimension(R.styleable.DisDrawableButton_disUnderlineHeight, context.getResources().getDimension(R.dimen.disUnderlineHeight));
+        float underlineHeight = styledAttributes.getDimension(R.styleable.DisDrawableButton_disUnderlineHeight, getResources().getDimension(R.dimen.disUnderlineHeight));
         setUnderlineHeight(underlineHeight);
 
     }
 
-    private void setupLayout(Context context, TypedArray styledAttributes) {
+    private void setupLayout(TypedArray styledAttributes) {
         //background
 
         int backgroundRes = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disBackground, -1);
@@ -139,7 +138,7 @@ public class DisDrawableButton extends FrameLayout {
         setRightTintColor(rightTintColor);
     }
 
-    private void setupText(Context context, TypedArray styledAttributes) {
+    private void setupText(TypedArray styledAttributes) {
         //text
 
         String text = styledAttributes.getString(R.styleable.DisDrawableButton_disText);
@@ -148,13 +147,13 @@ public class DisDrawableButton extends FrameLayout {
 
         //textColor
 
-        int textColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disTextColor, context.getResources().getColor(R.color.disTextColor));
+        int textColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disTextColor, getResources().getColor(R.color.disTextColor));
         setTextColor(textColor);
 
 
         //textSize
 
-        float textSize = styledAttributes.getDimension(R.styleable.DisDrawableButton_disTextSize, context.getResources().getDimension(R.dimen.disTextSize));
+        float textSize = styledAttributes.getDimension(R.styleable.DisDrawableButton_disTextSize, getResources().getDimension(R.dimen.disTextSize));
         setTextSize(textSize);
 
 
@@ -327,6 +326,8 @@ public class DisDrawableButton extends FrameLayout {
 
     @Override
     protected void onDetachedFromWindow() {
+        clDrawableButton.setOnClickListener(null);
+        llDisDrawable.setOnClickListener(null);
         clDrawableButton = null;
         llDisDrawable = null;
         imgDrawableLeft = null;
@@ -343,6 +344,6 @@ public class DisDrawableButton extends FrameLayout {
         }
         txtDrawableButton.setTypeface(typeface);
     }
-    
+
 
 }

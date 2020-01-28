@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffaca0a5-f319-43ed-bd57-0b14eadfec16" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,20 +33,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="344" column="5" lean-forward="true" selection-start-line="344" selection-start-column="5" selection-end-line="344" selection-end-column="5" />
+            <state relative-caret-position="-484">
+              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
               <folding>
                 <element signature="method#DisDrawableButton#0;class#DisDrawableButton#0" />
                 <element signature="method#DisDrawableButton#1;class#DisDrawableButton#0" />
                 <element signature="method#DisDrawableButton#2;class#DisDrawableButton#0" />
-                <element signature="method#init#0;class#DisDrawableButton#0" />
-                <element signature="method#setupView#0;class#DisDrawableButton#0" />
                 <element signature="method#setupUnderline#0;class#DisDrawableButton#0" />
                 <element signature="method#setupLayout#0;class#DisDrawableButton#0" />
                 <element signature="e#3604#3666#1" />
                 <element signature="e#3944#4020#1" />
                 <element signature="method#setupDrawable#0;class#DisDrawableButton#0" />
-                <element signature="method#setupText#0;class#DisDrawableButton#0" />
+                <element signature="e#5738#5794#0" expanded="true" />
                 <element signature="e#6007#6397#0" />
                 <element signature="method#setBackgroundColor#0;class#DisDrawableButton#0" />
                 <element signature="method#setBackgroundDrawable#0;class#DisDrawableButton#0" />
@@ -82,7 +82,7 @@
                 <element signature="e#10924#10979#1" />
                 <element signature="method#onDetachedFromWindow#0;class#DisDrawableButton#0" />
                 <element signature="method#setTypeface#0;class#DisDrawableButton#0" />
-                <element signature="e#11139#11170#1" />
+                <element signature="e#11465#11496#1" />
               </folding>
             </state>
           </provider>
@@ -178,6 +178,7 @@
     <panes>
       <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -189,7 +190,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580187811292</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="onDetachedFromWindow">
+      <created>1580187852117</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1580187852117</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -679,20 +686,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="344" column="5" lean-forward="true" selection-start-line="344" selection-start-column="5" selection-end-line="344" selection-end-column="5" />
+        <state relative-caret-position="-484">
+          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
           <folding>
             <element signature="method#DisDrawableButton#0;class#DisDrawableButton#0" />
             <element signature="method#DisDrawableButton#1;class#DisDrawableButton#0" />
             <element signature="method#DisDrawableButton#2;class#DisDrawableButton#0" />
-            <element signature="method#init#0;class#DisDrawableButton#0" />
-            <element signature="method#setupView#0;class#DisDrawableButton#0" />
             <element signature="method#setupUnderline#0;class#DisDrawableButton#0" />
             <element signature="method#setupLayout#0;class#DisDrawableButton#0" />
             <element signature="e#3604#3666#1" />
             <element signature="e#3944#4020#1" />
             <element signature="method#setupDrawable#0;class#DisDrawableButton#0" />
-            <element signature="method#setupText#0;class#DisDrawableButton#0" />
+            <element signature="e#5738#5794#0" expanded="true" />
             <element signature="e#6007#6397#0" />
             <element signature="method#setBackgroundColor#0;class#DisDrawableButton#0" />
             <element signature="method#setBackgroundDrawable#0;class#DisDrawableButton#0" />
@@ -730,7 +735,7 @@
             <element signature="e#10924#10979#1" />
             <element signature="method#onDetachedFromWindow#0;class#DisDrawableButton#0" />
             <element signature="method#setTypeface#0;class#DisDrawableButton#0" />
-            <element signature="e#11139#11170#1" />
+            <element signature="e#11465#11496#1" />
           </folding>
         </state>
       </provider>
