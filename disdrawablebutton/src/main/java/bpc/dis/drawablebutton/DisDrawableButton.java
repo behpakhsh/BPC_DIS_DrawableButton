@@ -33,21 +33,71 @@ public class DisDrawableButton extends FrameLayout {
 
     public DisDrawableButton(Context context) {
         super(context);
-        init(context, null, 0);
+        init(null, 0);
     }
 
     public DisDrawableButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init(context, attrs, 0);
+        init(attrs, 0);
     }
 
     public DisDrawableButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context, attrs, defStyleAttr);
+        init(attrs, defStyleAttr);
     }
 
-    public void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        View view = inflate(context, R.layout.dis_drawable_button, this);
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        clDrawableButton.setOnClickListener(null);
+        llDisDrawable.setOnClickListener(null);
+    }
+
+    @Override
+    public void setBackgroundColor(int backgroundColor) {
+        clDrawableButton.setBackgroundColor(backgroundColor);
+    }
+
+    @Override
+    public void setBackgroundDrawable(Drawable background) {
+        clDrawableButton.setBackgroundDrawable(background);
+    }
+
+    @Override
+    public void setOnClickListener(@Nullable OnClickListener onClickListener) {
+        if (enableClickAnimation) {
+            btnDrawableButton.setOnClickListener(onClickListener);
+        } else {
+            clDrawableButton.setOnClickListener(onClickListener);
+        }
+        llDisDrawable.setOnClickListener(onClickListener);
+    }
+
+    @Override
+    public void setOnLongClickListener(@Nullable OnLongClickListener onLongClickListener) {
+        if (enableClickAnimation) {
+            btnDrawableButton.setOnLongClickListener(onLongClickListener);
+        } else {
+            clDrawableButton.setOnLongClickListener(onLongClickListener);
+        }
+        llDisDrawable.setOnLongClickListener(onLongClickListener);
+    }
+
+    @Override
+    public boolean callOnClick() {
+        if (enableClickAnimation) {
+            btnDrawableButton.callOnClick();
+        } else {
+            clDrawableButton.callOnClick();
+        }
+        llDisDrawable.callOnClick();
+        return super.callOnClick();
+    }
+
+
+    public void init(AttributeSet attrs, int defStyleAttr) {
+        View view = inflate(getContext(), R.layout.dis_drawable_button, this);
         clDrawableButton = view.findViewById(R.id.cl_dis_drawable_button);
         llDisDrawable = view.findViewById(R.id.ll_dis_drawable);
         btnDrawableButton = view.findViewById(R.id.btn_dis_drawable_button);
@@ -55,10 +105,11 @@ public class DisDrawableButton extends FrameLayout {
         imgDrawableRight = view.findViewById(R.id.img_drawable_right);
         txtDrawableButton = view.findViewById(R.id.txt_drawable_button);
         vUnderline = view.findViewById(R.id.v_underline);
-        setupView(context.obtainStyledAttributes(attrs, R.styleable.DisDrawableButton));
+        setupView(attrs);
     }
 
-    private void setupView(TypedArray styledAttributes) {
+    private void setupView(AttributeSet attrs) {
+        TypedArray styledAttributes = getContext().obtainStyledAttributes(attrs, R.styleable.DisDrawableButton);
         setupLayout(styledAttributes);
         setupDrawable(styledAttributes);
         setupText(styledAttributes);
@@ -186,16 +237,6 @@ public class DisDrawableButton extends FrameLayout {
         clDrawableButton.setBackgroundResource(res);
     }
 
-    @Override
-    public void setBackgroundColor(int backgroundColor) {
-        clDrawableButton.setBackgroundColor(backgroundColor);
-    }
-
-    @Override
-    public void setBackgroundDrawable(Drawable background) {
-        clDrawableButton.setBackgroundDrawable(background);
-    }
-
     public void setEnable(boolean enable) {
         clDrawableButton.setEnabled(enable);
         btnDrawableButton.setEnabled(enable);
@@ -290,52 +331,6 @@ public class DisDrawableButton extends FrameLayout {
         } else {
             vUnderline.setVisibility(GONE);
         }
-    }
-
-
-    @Override
-    public void setOnClickListener(@Nullable OnClickListener onClickListener) {
-        if (enableClickAnimation) {
-            btnDrawableButton.setOnClickListener(onClickListener);
-        } else {
-            clDrawableButton.setOnClickListener(onClickListener);
-        }
-        llDisDrawable.setOnClickListener(onClickListener);
-    }
-
-    @Override
-    public void setOnLongClickListener(@Nullable OnLongClickListener onLongClickListener) {
-        if (enableClickAnimation) {
-            btnDrawableButton.setOnLongClickListener(onLongClickListener);
-        } else {
-            clDrawableButton.setOnLongClickListener(onLongClickListener);
-        }
-        llDisDrawable.setOnLongClickListener(onLongClickListener);
-    }
-
-    @Override
-    public boolean callOnClick() {
-        if (enableClickAnimation) {
-            btnDrawableButton.callOnClick();
-        } else {
-            clDrawableButton.callOnClick();
-        }
-        llDisDrawable.callOnClick();
-        return super.callOnClick();
-    }
-
-    @Override
-    protected void onDetachedFromWindow() {
-        clDrawableButton.setOnClickListener(null);
-        llDisDrawable.setOnClickListener(null);
-        clDrawableButton = null;
-        llDisDrawable = null;
-        imgDrawableLeft = null;
-        imgDrawableRight = null;
-        txtDrawableButton = null;
-        btnDrawableButton = null;
-        vUnderline = null;
-        super.onDetachedFromWindow();
     }
 
     public void setTypeface(Typeface typeface) {
