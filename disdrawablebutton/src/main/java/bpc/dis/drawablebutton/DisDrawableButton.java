@@ -86,11 +86,6 @@ public class DisDrawableButton extends FrameLayout {
 
     @Override
     public boolean callOnClick() {
-        if (enableClickAnimation) {
-            btnDrawableButton.callOnClick();
-        } else {
-            clDrawableButton.callOnClick();
-        }
         llDisDrawable.callOnClick();
         return super.callOnClick();
     }
@@ -227,11 +222,9 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
-
     public AppCompatTextView getTextView() {
         return txtDrawableButton;
     }
-
 
     public void setBackgroundResource(int res) {
         clDrawableButton.setBackgroundResource(res);

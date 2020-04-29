@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BPC_DIS_DrawableButton.iml" filepath="$PROJECT_DIR$/BPC_DIS_DrawableButton.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/disdrawablebutton/disdrawablebutton.iml" filepath="$PROJECT_DIR$/disdrawablebutton/disdrawablebutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BPC_DIS_DrawableButton.iml" filepath="$PROJECT_DIR$/BPC_DIS_DrawableButton.iml" group="BPC_DIS_DrawableButton" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="BPC_DIS_DrawableButton/app" />
+      <module fileurl="file://$PROJECT_DIR$/disdrawablebutton/disdrawablebutton.iml" filepath="$PROJECT_DIR$/disdrawablebutton/disdrawablebutton.iml" group="BPC_DIS_DrawableButton/disdrawablebutton" />
     </modules>
   </component>
 </project>
