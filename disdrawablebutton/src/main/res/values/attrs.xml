@@ -6,7 +6,7 @@
         <attr name="disUnderlineColor" format="color" />
         <attr name="disUnderlineHeight" format="dimension" />
         <attr name="disEnableClickAnimation" format="boolean" />
-        <attr name="disDisableBackground" format="color" />
+        <attr name="disDisableBackground" format="reference|color" />
         <attr name="disBackground" format="reference|color" />
         <attr name="disDrawableLeft" format="reference|color" />
         <attr name="disLeftTintColor" format="color" />
