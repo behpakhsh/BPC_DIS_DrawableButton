@@ -7,7 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffaca0a5-f319-43ed-bd57-0b14eadfec16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/res/layout/dis_drawable_button_match.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/disdrawablebutton.iml" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/disdrawablebutton.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/java/bpc/dis/drawablebutton/DisDrawableButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/attrs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/disdrawablebutton/src/main/res/values/dimens.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,10 +47,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1366" />
-    <option name="height" value="364" />
-  </component>
   <component name="ProjectId" id="1bCqslpYeyhtkA4HxhxbhZxqSyB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -54,14 +56,14 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Project\Behpaksh\JitPackLibrary\BPC_DIS_DrawableButton\BPC_DIS_DrawableButton\disdrawablebutton\src\main\res\layout" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\Behpaksh\JitPackLibrary\BPC_DIS_DrawableButton\BPC_DIS_DrawableButton\disdrawablebutton\src\main\res\values" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="bpc.dis.drawablebutton" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Project\Behpaksh\JitPackLibrary\BPC_DIS_DrawableButton\BPC_DIS_DrawableButton\disdrawablebutton\src\main\res\values" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Behpaksh\JitPackLibrary\BPC_DIS_DrawableButton\BPC_DIS_DrawableButton\disdrawablebutton\src\main\res\layout" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588147222507</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="change disDisableBackground to format &quot;reference|color&quot;">
+      <created>1589005843495</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1589005843496</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -371,6 +380,7 @@
     <MESSAGE value="onDetachedFromWindow" />
     <MESSAGE value="Fix Memory Leak" />
     <MESSAGE value="update Gradle&#10;fix callOnClick Bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Gradle&#10;fix callOnClick Bug" />
+    <MESSAGE value="change disDisableBackground to format &quot;reference|color&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="change disDisableBackground to format &quot;reference|color&quot;" />
   </component>
 </project>

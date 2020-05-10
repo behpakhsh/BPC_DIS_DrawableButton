@@ -4,8 +4,8 @@
     <dimen name="disTextSize">14dp</dimen>
     <dimen name="disMarginTop">10dp</dimen>
     <dimen name="disMarginBottom">10dp</dimen>
-    <dimen name="disMarginStart">20dp</dimen>
-    <dimen name="disMarginEnd">20dp</dimen>
+    <dimen name="disMarginStart">5dp</dimen>
+    <dimen name="disMarginEnd">5dp</dimen>
     <dimen name="disTextMarginStart">5dp</dimen>
     <dimen name="disTextMarginEnd">5dp</dimen>
     <dimen name="disUnderlineHeight">1dp</dimen>

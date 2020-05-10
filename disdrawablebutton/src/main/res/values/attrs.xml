@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="DisDrawableButton">
+        <attr name="disIconType">
+            <flag name="sideText" value="0" />
+            <flag name="sideParent" value="1" />
+        </attr>
         <attr name="disEnable" format="boolean" />
         <attr name="disUnderlineEnable" format="boolean" />
         <attr name="disUnderlineColor" format="color" />
