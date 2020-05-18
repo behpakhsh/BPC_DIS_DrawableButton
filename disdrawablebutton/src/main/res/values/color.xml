@@ -6,4 +6,6 @@
     <color name="disUnderlineColor">#9C9C9C</color>
     <color name="disTextColor">#464646</color>
 
+    <color name="text">#FF0000</color>
+
 </resources>

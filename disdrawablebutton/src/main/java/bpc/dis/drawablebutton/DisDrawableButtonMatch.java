@@ -1,5 +1,6 @@
 package bpc.dis.drawablebutton;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
@@ -17,10 +18,10 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-public class DisDrawableButton extends FrameLayout {
+public class DisDrawableButtonMatch extends FrameLayout {
 
     private ConstraintLayout clDrawableButton;
-    private LinearLayout llDisDrawable;
+    private ConstraintLayout llDisDrawable;
     private AppCompatImageView imgDrawableLeft;
     private AppCompatImageView imgDrawableRight;
     private AppCompatTextView txtDrawableButton;
@@ -31,17 +32,17 @@ public class DisDrawableButton extends FrameLayout {
     private int disableBackgroundRes;
     private boolean enableClickAnimation;
 
-    public DisDrawableButton(Context context) {
+    public DisDrawableButtonMatch(Context context) {
         super(context);
         init(null, 0);
     }
 
-    public DisDrawableButton(Context context, AttributeSet attrs) {
+    public DisDrawableButtonMatch(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
 
-    public DisDrawableButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public DisDrawableButtonMatch(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs, defStyleAttr);
     }
@@ -92,8 +93,9 @@ public class DisDrawableButton extends FrameLayout {
 
 
     public void init(AttributeSet attrs, int defStyleAttr) {
+        @SuppressLint("CustomViewStyleable")
         TypedArray styledAttributes = getContext().obtainStyledAttributes(attrs, R.styleable.DisDrawableButton);
-        View view = inflate(getContext(), R.layout.dis_drawable_button, this);
+        View view = inflate(getContext(), R.layout.dis_drawable_button_match, this);
         clDrawableButton = view.findViewById(R.id.cl_dis_drawable_button);
         llDisDrawable = view.findViewById(R.id.ll_dis_drawable);
         btnDrawableButton = view.findViewById(R.id.btn_dis_drawable_button);
