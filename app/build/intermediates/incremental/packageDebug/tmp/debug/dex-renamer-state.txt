@@ -1,0 +1,4 @@
+#Tue May 19 17:15:58 IRDT 2020
+base.0=F\:\\Project\\Behpaksh\\JitPackLibrary\\BPC_DIS_DrawableButton\\BPC_DIS_DrawableButton\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
