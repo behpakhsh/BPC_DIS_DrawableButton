@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="disBackground">#D3D3D3</color>
+    <color name="disDisableBackground">#D3D3D3</color>
+    <color name="disTextColor">#464646</color>
+    <color name="disUnderlineColor">#9C9C9C</color>
+    <color name="text">#FF0000</color>
+    <dimen name="disMarginBottom">10dp</dimen>
+    <dimen name="disMarginEnd">5dp</dimen>
+    <dimen name="disMarginStart">5dp</dimen>
+    <dimen name="disMarginTop">10dp</dimen>
+    <dimen name="disTextMarginEnd">5dp</dimen>
+    <dimen name="disTextMarginStart">5dp</dimen>
+    <dimen name="disTextSize">14dp</dimen>
+    <dimen name="disUnderlineHeight">1dp</dimen>
+    <dimen name="disUnderlineMarginTop">5dp</dimen>
+    <string name="app_name">DisDrawableButton</string>
+    <declare-styleable name="DisDrawableButton">
+        <attr format="boolean" name="disEnable"/>
+        <attr format="boolean" name="disUnderlineEnable"/>
+        <attr format="color" name="disUnderlineColor"/>
+        <attr format="dimension" name="disUnderlineHeight"/>
+        <attr format="boolean" name="disEnableClickAnimation"/>
+        <attr format="reference|color" name="disDisableBackground"/>
+        <attr format="reference|color" name="disBackground"/>
+        <attr format="reference|color" name="disDrawableLeft"/>
+        <attr format="color" name="disLeftTintColor"/>
+        <attr format="reference|color" name="disDrawableRight"/>
+        <attr format="color" name="disRightTintColor"/>
+        <attr format="reference|string" localization="suggested" name="disText"/>
+        <attr format="reference|color" name="disTextColor"/>
+        <attr format="dimension" name="disTextSize"/>
+        <attr name="disTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+            <flag name="bold_italic" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

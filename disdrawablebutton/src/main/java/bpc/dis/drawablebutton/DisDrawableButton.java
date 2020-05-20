@@ -92,7 +92,6 @@ public class DisDrawableButton extends FrameLayout {
 
 
     public void init(AttributeSet attrs, int defStyleAttr) {
-        TypedArray styledAttributes = getContext().obtainStyledAttributes(attrs, R.styleable.DisDrawableButton);
         View view = inflate(getContext(), R.layout.dis_drawable_button, this);
         clDrawableButton = view.findViewById(R.id.cl_dis_drawable_button);
         llDisDrawable = view.findViewById(R.id.ll_dis_drawable);
@@ -101,15 +100,16 @@ public class DisDrawableButton extends FrameLayout {
         imgDrawableRight = view.findViewById(R.id.img_drawable_right);
         txtDrawableButton = view.findViewById(R.id.txt_drawable_button);
         vUnderline = view.findViewById(R.id.v_underline);
-        setupView(styledAttributes);
+        setupView(attrs);
     }
 
-    private void setupView(TypedArray typedArray) {
-        setupLayout(typedArray);
-        setupDrawable(typedArray);
-        setupText(typedArray);
-        setupUnderline(typedArray);
-        typedArray.recycle();
+    private void setupView(AttributeSet attrs) {
+        TypedArray styledAttributes = getContext().obtainStyledAttributes(attrs, R.styleable.DisDrawableButton);
+        setupLayout(styledAttributes);
+        setupDrawable(styledAttributes);
+        setupText(styledAttributes);
+        setupUnderline(styledAttributes);
+        styledAttributes.recycle();
     }
 
     private void setupUnderline(TypedArray styledAttributes) {
