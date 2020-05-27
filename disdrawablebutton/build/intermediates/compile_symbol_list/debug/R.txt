@@ -131,7 +131,11 @@ int attr dialogTheme 0x0
 int attr disBackground 0x0
 int attr disDisableBackground 0x0
 int attr disDrawableLeft 0x0
+int attr disDrawableLeftHeight 0x0
+int attr disDrawableLeftWidth 0x0
 int attr disDrawableRight 0x0
+int attr disDrawableRightHeight 0x0
+int attr disDrawableRightWidth 0x0
 int attr disEnable 0x0
 int attr disEnableClickAnimation 0x0
 int attr disLeftTintColor 0x0
@@ -684,6 +688,7 @@ int drawable btn_radio_off_mtrl 0x0
 int drawable btn_radio_off_to_on_mtrl_animation 0x0
 int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
+int drawable ic_update_inventory 0x0
 int drawable notification_action_background 0x0
 int drawable notification_bg 0x0
 int drawable notification_bg_low 0x0
@@ -1685,22 +1690,26 @@ int styleable ConstraintSet_layout_goneMarginLeft 76
 int styleable ConstraintSet_layout_goneMarginRight 77
 int styleable ConstraintSet_layout_goneMarginStart 78
 int styleable ConstraintSet_layout_goneMarginTop 79
-int[] styleable DisDrawableButton { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
+int[] styleable DisDrawableButton { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable DisDrawableButton_disBackground 0
 int styleable DisDrawableButton_disDisableBackground 1
 int styleable DisDrawableButton_disDrawableLeft 2
-int styleable DisDrawableButton_disDrawableRight 3
-int styleable DisDrawableButton_disEnable 4
-int styleable DisDrawableButton_disEnableClickAnimation 5
-int styleable DisDrawableButton_disLeftTintColor 6
-int styleable DisDrawableButton_disRightTintColor 7
-int styleable DisDrawableButton_disText 8
-int styleable DisDrawableButton_disTextColor 9
-int styleable DisDrawableButton_disTextSize 10
-int styleable DisDrawableButton_disTextStyle 11
-int styleable DisDrawableButton_disUnderlineColor 12
-int styleable DisDrawableButton_disUnderlineEnable 13
-int styleable DisDrawableButton_disUnderlineHeight 14
+int styleable DisDrawableButton_disDrawableLeftHeight 3
+int styleable DisDrawableButton_disDrawableLeftWidth 4
+int styleable DisDrawableButton_disDrawableRight 5
+int styleable DisDrawableButton_disDrawableRightHeight 6
+int styleable DisDrawableButton_disDrawableRightWidth 7
+int styleable DisDrawableButton_disEnable 8
+int styleable DisDrawableButton_disEnableClickAnimation 9
+int styleable DisDrawableButton_disLeftTintColor 10
+int styleable DisDrawableButton_disRightTintColor 11
+int styleable DisDrawableButton_disText 12
+int styleable DisDrawableButton_disTextColor 13
+int styleable DisDrawableButton_disTextSize 14
+int styleable DisDrawableButton_disTextStyle 15
+int styleable DisDrawableButton_disUnderlineColor 16
+int styleable DisDrawableButton_disUnderlineEnable 17
+int styleable DisDrawableButton_disUnderlineHeight 18
 int[] styleable DrawerArrowToggle { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable DrawerArrowToggle_arrowHeadLength 0
 int styleable DrawerArrowToggle_arrowShaftLength 1

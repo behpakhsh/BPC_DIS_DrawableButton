@@ -9,8 +9,12 @@
         <attr name="disDisableBackground" format="reference|color" />
         <attr name="disBackground" format="reference|color" />
         <attr name="disDrawableLeft" format="reference|color" />
+        <attr name="disDrawableLeftHeight" format="dimension" />
+        <attr name="disDrawableLeftWidth" format="dimension" />
         <attr name="disLeftTintColor" format="color" />
         <attr name="disDrawableRight" format="reference|color" />
+        <attr name="disDrawableRightHeight" format="dimension" />
+        <attr name="disDrawableRightWidth" format="dimension" />
         <attr name="disRightTintColor" format="color" />
         <attr name="disText" format="reference|string" localization="suggested" />
         <attr name="disTextColor" format="reference|color" />

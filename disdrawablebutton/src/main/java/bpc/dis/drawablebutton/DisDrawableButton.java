@@ -161,50 +161,52 @@ public class DisDrawableButton extends FrameLayout {
     }
 
     private void setupDrawable(TypedArray styledAttributes) {
-        //leftDrawable
+        setLeftDrawable(styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDrawableLeft, -1));
+        setLeftTintColor(styledAttributes.getColor(R.styleable.DisDrawableButton_disLeftTintColor, -1));
+        setLeftDrawableHeight(styledAttributes.getDimension(R.styleable.DisDrawableButton_disDrawableLeftHeight, -1));
+        setLeftDrawableWidth(styledAttributes.getDimension(R.styleable.DisDrawableButton_disDrawableLeftWidth, -1));
+        setRightDrawable(styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDrawableRight, -1));
+        setRightTintColor(styledAttributes.getColor(R.styleable.DisDrawableButton_disRightTintColor, -1));
+        setRightDrawableHeight(styledAttributes.getDimension(R.styleable.DisDrawableButton_disDrawableRightHeight, -1));
+        setRightDrawableWidth(styledAttributes.getDimension(R.styleable.DisDrawableButton_disDrawableRightWidth, -1));
+    }
 
-        int leftDrawable = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDrawableLeft, -1);
-        setLeftDrawable(leftDrawable);
+    private void setLeftDrawableHeight(float height) {
+        if (height != -1) {
+            ViewGroup.LayoutParams params = imgDrawableLeft.getLayoutParams();
+            params.height = (int) height;
+            imgDrawableLeft.requestLayout();
+        }
+    }
 
+    private void setLeftDrawableWidth(float width) {
+        if (width != -1) {
+            ViewGroup.LayoutParams params = imgDrawableLeft.getLayoutParams();
+            params.width = (int) width;
+            imgDrawableLeft.requestLayout();
+        }
+    }
 
-        //leftTintColor
+    private void setRightDrawableHeight(float height) {
+        if (height != -1) {
+            ViewGroup.LayoutParams params = imgDrawableRight.getLayoutParams();
+            params.height = (int) height;
+            imgDrawableRight.requestLayout();
+        }
+    }
 
-        int leftTintColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disLeftTintColor, -1);
-        setLeftTintColor(leftTintColor);
-
-        //rightDrawable
-
-        int rightDrawable = styledAttributes.getResourceId(R.styleable.DisDrawableButton_disDrawableRight, -1);
-        setRightDrawable(rightDrawable);
-
-
-        //rightTintColor
-
-        int rightTintColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disRightTintColor, -1);
-        setRightTintColor(rightTintColor);
+    private void setRightDrawableWidth(float width) {
+        if (width != -1) {
+            ViewGroup.LayoutParams params = imgDrawableRight.getLayoutParams();
+            params.width = (int) width;
+            imgDrawableRight.requestLayout();
+        }
     }
 
     private void setupText(TypedArray styledAttributes) {
-        //text
-
-        String text = styledAttributes.getString(R.styleable.DisDrawableButton_disText);
-        setText(text);
-
-
-        //textColor
-
-        int textColor = styledAttributes.getColor(R.styleable.DisDrawableButton_disTextColor, getResources().getColor(R.color.disTextColor));
-        setTextColor(textColor);
-
-
-        //textSize
-
-        float textSize = styledAttributes.getDimension(R.styleable.DisDrawableButton_disTextSize, getResources().getDimension(R.dimen.disTextSize));
-        setTextSize(textSize);
-
-
-        //textStyle
-
+        setText(styledAttributes.getString(R.styleable.DisDrawableButton_disText));
+        setTextColor(styledAttributes.getColor(R.styleable.DisDrawableButton_disTextColor, getResources().getColor(R.color.disTextColor)));
+        setTextSize(styledAttributes.getDimension(R.styleable.DisDrawableButton_disTextSize, getResources().getDimension(R.dimen.disTextSize)));
         int textStyle = styledAttributes.getInteger(R.styleable.DisDrawableButton_disTextStyle, DisTextStyle.NORMAL.getValue());
         switch (textStyle) {
             case 0:
