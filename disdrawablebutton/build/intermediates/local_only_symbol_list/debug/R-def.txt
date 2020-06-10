@@ -33,7 +33,6 @@ dimen disTextMarginStart
 dimen disTextSize
 dimen disUnderlineHeight
 dimen disUnderlineMarginTop
-drawable ic_update_inventory
 id btn_dis_drawable_button
 id cl_dis_drawable_button
 id img_drawable_left
@@ -43,6 +42,5 @@ id txt_drawable_button
 id v_underline
 layout dis_drawable_button
 layout dis_drawable_button_match
-layout test
 string app_name
 styleable DisDrawableButton disEnable disUnderlineEnable disUnderlineColor disUnderlineHeight disEnableClickAnimation disDisableBackground disBackground disDrawableLeft disDrawableLeftHeight disDrawableLeftWidth disLeftTintColor disDrawableRight disDrawableRightHeight disDrawableRightWidth disRightTintColor disText disTextColor disTextSize disTextStyle

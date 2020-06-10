@@ -297,6 +297,12 @@ public class DisDrawableButton extends FrameLayout {
         }
     }
 
+    public void setRightTintColorRes(int rightTintColorRes) {
+        if (rightTintColorRes != -1) {
+            imgDrawableRight.setColorFilter(getResources().getColor(rightTintColorRes));
+        }
+    }
+
     public void setLeftDrawable(int leftDrawable) {
         if (leftDrawable != -1) {
             imgDrawableLeft.setImageResource(leftDrawable);
@@ -306,6 +312,12 @@ public class DisDrawableButton extends FrameLayout {
     public void setLeftTintColor(int leftTintColor) {
         if (leftTintColor != -1) {
             imgDrawableLeft.setColorFilter(leftTintColor);
+        }
+    }
+
+    public void setLeftTintColorRes(int leftTintColorRes) {
+        if (leftTintColorRes != -1) {
+            imgDrawableRight.setColorFilter(getResources().getColor(leftTintColorRes));
         }
     }
 

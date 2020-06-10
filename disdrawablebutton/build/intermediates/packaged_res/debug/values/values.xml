@@ -24,8 +24,12 @@
         <attr format="reference|color" name="disDisableBackground"/>
         <attr format="reference|color" name="disBackground"/>
         <attr format="reference|color" name="disDrawableLeft"/>
+        <attr format="dimension" name="disDrawableLeftHeight"/>
+        <attr format="dimension" name="disDrawableLeftWidth"/>
         <attr format="color" name="disLeftTintColor"/>
         <attr format="reference|color" name="disDrawableRight"/>
+        <attr format="dimension" name="disDrawableRightHeight"/>
+        <attr format="dimension" name="disDrawableRightWidth"/>
         <attr format="color" name="disRightTintColor"/>
         <attr format="reference|string" localization="suggested" name="disText"/>
         <attr format="reference|color" name="disTextColor"/>

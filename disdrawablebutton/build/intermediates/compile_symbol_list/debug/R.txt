@@ -688,7 +688,6 @@ int drawable btn_radio_off_mtrl 0x0
 int drawable btn_radio_off_to_on_mtrl_animation 0x0
 int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
-int drawable ic_update_inventory 0x0
 int drawable notification_action_background 0x0
 int drawable notification_bg 0x0
 int drawable notification_bg_low 0x0
@@ -919,7 +918,6 @@ int layout select_dialog_item_material 0x0
 int layout select_dialog_multichoice_material 0x0
 int layout select_dialog_singlechoice_material 0x0
 int layout support_simple_spinner_dropdown_item 0x0
-int layout test 0x0
 int string abc_action_bar_home_description 0x0
 int string abc_action_bar_up_description 0x0
 int string abc_action_menu_overflow_description 0x0
