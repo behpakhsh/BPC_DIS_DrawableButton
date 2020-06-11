@@ -317,7 +317,7 @@ public class DisDrawableButton extends FrameLayout {
 
     public void setLeftTintColorRes(int leftTintColorRes) {
         if (leftTintColorRes != -1) {
-            imgDrawableRight.setColorFilter(getResources().getColor(leftTintColorRes));
+            imgDrawableLeft.setColorFilter(getResources().getColor(leftTintColorRes));
         }
     }
 
