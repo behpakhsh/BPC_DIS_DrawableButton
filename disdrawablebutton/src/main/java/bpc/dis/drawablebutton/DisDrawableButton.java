@@ -347,5 +347,8 @@ public class DisDrawableButton extends FrameLayout {
         txtDrawableButton.setTypeface(typeface);
     }
 
+    public void setGravity(int gravity) {
+        txtDrawableButton.setGravity(gravity);
+    }
 
 }
